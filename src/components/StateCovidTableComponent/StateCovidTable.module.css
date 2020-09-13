@@ -1,0 +1,175 @@
+.tableContainer{
+    width: 50%;
+    margin: 0 auto;
+}
+.tableContainer div h2{
+	margin: 0 auto;
+    line-height: 2rem;
+}
+.tableBuilder {
+	overflow-y: scroll;
+	height: 286px;
+}
+.stateRow{
+	cursor: pointer;
+}
+thead th {
+	position:sticky;
+	top:0;
+	background-color: #1CBFD4;
+	color: white;
+	z-index: 200;
+	}
+
+
+th,
+td {
+	border: 1px solid #dee2e6;
+	text-align: end;
+	border-radius: 3px;
+	width: 10%;
+}
+tr:nth-child(even) {
+	background-color: rgba(0,0,0,.05);
+}
+tbody tr:hover{
+	background-color:#bdbdc2 ;
+}
+th:first-child{
+	text-align: start;
+}
+.statewise_component {
+	display: flex;
+	margin: 15px;
+
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	position: relative;
+}
+.tblHeading {
+	background-color: #1CBFD4;
+    color: white;
+}
+.collapsableDiv{
+	position: relative;
+    text-align: left;
+}
+
+.heading{
+	margin-left: 15px;
+}
+.deltaconfirmed{
+	font-size: .7rem;
+    color: #FF073A;
+    font-weight: bold;
+}
+.deltarecovered{
+	font-size: .7rem;
+    color: #28a745;
+    font-weight: bold;
+}
+.deltadeaths{
+	font-size: .7rem;
+    color: #6c757d;
+    font-weight: bold;
+}
+.overall_percent_container{
+	position: absolute;
+    /* bottom: 0; */
+    /* width: 100%; */
+    left: 11px;
+    text-align: center;
+    border: 1px solid #bdbdc2;
+    margin-top: 15px;
+    border-radius: 1px;
+  width: 100px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	
+}
+.overall_percent_msg{
+	color: white;
+    background-color: #1CBFD4;
+    font-weight: bold;
+    margin: 0;
+    font-size: 21px;
+    /* margin-bottom: 2px; */
+    border-radius: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.state_title{
+	border-bottom: 1px solid white;
+    background-color: #eee;
+}
+.state_title > p{
+	margin: 0 auto;
+}
+.confirmed_perent{
+	border-bottom: 1px solid white;
+	background-color: #FF073A;
+}
+.confirmed_perent > p{
+	margin: 0 auto;
+    color: white;
+}
+.recovered_perent{
+	border-bottom: 1px solid white;
+    background-color: #28A745;
+}
+.recovered_perent > p{
+	margin: 0 auto;
+    color: white;
+}
+.active_perent{
+	background-color: #007bff;
+}
+
+.active_perent > p {
+	margin: 0 auto;
+    color: white;
+}
+.table_container{
+	overflow-y: scroll;
+	height: 350px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 500px) and (min-width:320px) {
+
+	.table_container{
+		overflow-x: scroll;
+		width: 100%;
+		height: 30rem;
+		
+	}
+	.table_container table{
+		width: 130%;
+	}
+	tr{
+		line-height: 1.5rem;
+	}
+
+	.statewise_component{
+		display: block;
+		margin: 1px;
+	}
+
+	.tableContainer{
+		flex-grow: 0;
+		flex-basis: 100%;
+	}
+	.overall_percent_container{
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 501px) {
+
+.tableContainer{
+	flex-grow: 0;
+	flex-basis: 100%;
+}
+
+}

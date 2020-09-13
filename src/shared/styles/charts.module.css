@@ -1,0 +1,36 @@
+.Chart {
+	position: relative;
+	width: 90%;
+	height: 260px;
+	top: -33px;
+	
+	border-radius: 8px;
+	color: white;
+	margin: 0 auto;
+	
+}
+/* .Chart:hover{
+	top:-60px;
+	transition: top 0.2s linear;
+} */
+.LineChart{
+	background-color: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px #FF073A;
+}
+
+.BarChart{
+	background-color: white;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px #2E9BC6;
+	
+}
+.RecoverdChart{
+	background-color:white;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px #28a745;
+}
+
+.LineCharts {
+	display: flex;
+	justify-content: center;
+    min-height: 10em;
+	flex-wrap: wrap;
+}
